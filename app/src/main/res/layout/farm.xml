@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewFarm"
+        android:layout_width="272dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="73dp"
+        android:layout_marginBottom="46dp"
+        android:text="Animals on the farm"
+        android:textAlignment="center"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnPig"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/btnCat"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginEnd="104dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/btnPig"
+        app:layout_constraintEnd_toStartOf="@+id/btnPig"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnPig"
+        app:srcCompat="@drawable/cat" />
+
+    <ImageView
+        android:id="@+id/btnDogge"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginEnd="104dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSheep"
+        app:layout_constraintEnd_toStartOf="@+id/btnSheep"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnSheep"
+        app:srcCompat="@drawable/dogge" />
+
+    <ImageView
+        android:id="@+id/btnPig"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="52dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/btnSheep"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnCat"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFarm"
+        app:srcCompat="@drawable/pig" />
+
+    <ImageView
+        android:id="@+id/btnSheep"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="59dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/btnCow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnDogge"
+        app:layout_constraintTop_toBottomOf="@+id/btnPig"
+        app:srcCompat="@drawable/sheep" />
+
+    <ImageView
+        android:id="@+id/btnChicken"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginEnd="104dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/btnCow"
+        app:layout_constraintEnd_toStartOf="@+id/btnCow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnCow"
+        app:srcCompat="@drawable/chicken" />
+
+    <ImageView
+        android:id="@+id/btnCow"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="64dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnChicken"
+        app:layout_constraintTop_toBottomOf="@+id/btnSheep"
+        app:srcCompat="@drawable/cow" />
+</android.support.constraint.ConstraintLayout>

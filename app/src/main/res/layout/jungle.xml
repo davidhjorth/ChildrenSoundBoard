@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewFarm"
+        android:layout_width="258dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="70dp"
+        android:text="Animals in the jungle"
+        android:textAlignment="center"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSnake"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/btnBear"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginEnd="89dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSnake"
+        app:layout_constraintEnd_toStartOf="@+id/btnSnake"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnSnake"
+        app:srcCompat="@drawable/bear" />
+
+    <ImageView
+        android:id="@+id/btnCheetah"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginEnd="89dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/btnElephant"
+        app:layout_constraintEnd_toStartOf="@+id/btnElephant"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnElephant"
+        app:srcCompat="@drawable/cheetah" />
+
+    <ImageView
+        android:id="@+id/btnElephant"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="44dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/btnJef"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnCheetah"
+        app:layout_constraintTop_toBottomOf="@+id/btnSnake"
+        app:srcCompat="@drawable/elephant" />
+
+    <ImageView
+        android:id="@+id/btnJef"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="59dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnTiger"
+        app:layout_constraintTop_toBottomOf="@+id/btnElephant"
+        app:srcCompat="@drawable/jef" />
+
+    <ImageView
+        android:id="@+id/btnSnake"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="49dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/btnElephant"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnBear"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFarm"
+        app:srcCompat="@drawable/snake" />
+
+    <ImageView
+        android:id="@+id/btnTiger"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginEnd="89dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/btnJef"
+        app:layout_constraintEnd_toStartOf="@+id/btnJef"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnJef"
+        app:srcCompat="@drawable/tiger" />
+</android.support.constraint.ConstraintLayout>
